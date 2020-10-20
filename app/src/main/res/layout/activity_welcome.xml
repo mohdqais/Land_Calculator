@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/image_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/land"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measure Land, Plot in Rectangle or Triangle Shape "
+        android:layout_below="@+id/image_welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txt_logo"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/frame_button">
+
+            <ImageView
+                android:id="@+id/rec_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rect_image"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/rect_image_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Plot Area"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/input_design"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/frame_button">
+
+            <ImageView
+                android:id="@+id/tri_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tri_land_image"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <Button
+                android:id="@+id/tri_image_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Triangle Area"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/input_design"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powered by"
+        android:layout_below="@+id/rell"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marwah Infotech "
+        android:layout_below="@+id/txt1"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textAlignment="center"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="marwahinfotech.com"
+        android:layout_below="@+id/txt2"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
